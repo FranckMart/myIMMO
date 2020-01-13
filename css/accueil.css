@@ -81,3 +81,32 @@ header {
     margin: auto;
     padding-left: 20%;
 }
+
+#marketing-webside-content {
+
+    width: 90%;
+    display: flex;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    background-color: #0772d8;
+    text-align: center;
+}
+
+.marketing-content-right {
+    padding: 10px;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: -10%;
+    height: auto;
+    
+}
+.marketing-content-right img{
+    width: 100%;
+    height: 100%;
+    background-color: #0772d8;
+}
+
+#annonce-content {
+    
+}
