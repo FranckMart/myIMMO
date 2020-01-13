@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Geometria";
+    src: url("../css/fonts/FontsFree-Net-Geometria-Light.ttf");
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+h1,h2,h3 {
+    font-family: "Geometria";
+    font-size: 16px;
+}
+p{
+    font-size: 12px;
+}
+
+a {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.952);
+}
+header {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    background-color: #0772d8;
+}
+#logo {
+    width: 15%;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+}
+
+#content-header-right {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: auto 0;
+}
+
+#recherche {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    border: none #0772d8;
+    padding: 6px;
+    border-bottom: 2px solid black;
+    background-color: #0772d8;
+
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.952);
+    font-style: italic;
+    
+}
+.content-header-right-nav{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 45%;
+}
+
+.content-header-right-nav a{
+    text-align: center;
+    margin: auto;
+    padding-left: 20%;
+}
