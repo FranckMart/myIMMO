@@ -22,9 +22,11 @@ body {
 h1,h2,h3 {
     font-family: "Geometria";
     font-size: 16px;
+   color: rgba(255, 255, 255, 0.952);
 }
 p{
     font-size: 12px;
+    color: rgba(255, 255, 255, 0.952);
 }
 
 a {
@@ -108,5 +110,28 @@ header {
 }
 
 #annonce-content {
-    
+    width: 90%;
+    margin: auto;
+    margin-top: 20%;
+    display: flex;
 }
+.annonce-pic-content {
+    width: 40%;
+    height:auto;
+    display: flex;
+}
+#annonce-content img {
+    width: 50%;
+    height: 90%;
+}
+
+#annonce-content img:nth-child(2) {
+    margin-left: -50px;
+    margin-top: 50px;
+}
+
+#annonce-content img:nth-child(3) {
+    margin-left: -50px;
+    margin-top: 100px;
+}
+
