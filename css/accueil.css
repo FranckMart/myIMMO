@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: "Geometria";
     src: url("../css/fonts/FontsFree-Net-Geometria-Light.ttf");
@@ -25,7 +27,7 @@ h1,h2,h3 {
    color: rgba(255, 255, 255, 0.952);
 }
 p{
-    font-size: 12px;
+    font-size: 13px;
     color: rgba(255, 255, 255, 0.952);
 }
 
@@ -40,6 +42,7 @@ header {
     margin: auto;
     background-color: #0772d8;
 }
+
 #logo {
     width: 15%;
 }
@@ -84,54 +87,64 @@ header {
     padding-left: 20%;
 }
 
-#marketing-webside-content {
-
+#content-center {
     width: 90%;
-    display: flex;
-    height: auto;
     margin: auto;
-    margin-top: 5%;
-    background-color: #0772d8;
-    text-align: center;
+    height: auto;
+    display: flex;
 }
 
-.marketing-content-right {
-    padding: 10px;
-    width: 90%;
-    margin-top: 5%;
-    margin-bottom: -10%;
+.content-left {
+    width: 70%;
+    margin-top: 10%;
+    text-align: center;
+    background-color: #0772d8;
+}
+
+.content-offre {
+    width: 100%;
+    padding: 5%;
+    height: auto;
+    display: flex;
+   
+}
+
+.content-offre h2 {
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+   
+}
+
+.description-offre p {
+    padding: 5%;
+    flex-direction: column;
+}
+.content-offre img{
+    width: 45%;
+    padding-left: 5%;
+    height: 100%;
+}
+
+.content-right {
+    width: 25%;
+    margin-left: auto;
     height: auto;
     
 }
-.marketing-content-right img{
+
+.add-content {
     width: 100%;
-    height: 100%;
+    margin-top: 60%;
+    height: 30%;
     background-color: #0772d8;
+    text-align: center;
 }
-
-#annonce-content {
-    width: 90%;
-    margin: auto;
-    margin-top: 20%;
-    display: flex;
+.logo-add-content {
+    padding-top: 10%;
+    width: 60%;
+    margin:auto;
+    
 }
-.annonce-pic-content {
-    width: 40%;
-    height:auto;
-    display: flex;
+.add-content img {
+    width: 100%;
 }
-#annonce-content img {
-    width: 50%;
-    height: 90%;
-}
-
-#annonce-content img:nth-child(2) {
-    margin-left: -50px;
-    margin-top: 50px;
-}
-
-#annonce-content img:nth-child(3) {
-    margin-left: -50px;
-    margin-top: 100px;
-}
-
