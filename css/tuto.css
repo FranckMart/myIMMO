@@ -7,7 +7,10 @@ html {
     height: 100%;
     width: 100%;
 }
-
+input{
+    font-family: "Geometria";
+    font-weight: bold;
+}
 div {
     box-sizing: border-box;
 }
@@ -24,11 +27,16 @@ h1,h2,h3 {
     font-size: 16px;
 }
 p{
-    font-size: 12px;
+    font-size: 16px;
+    font-family: "Geometria";
+    font-weight: bold;
+    padding: 10px;
+    margin: 30px;
 }
-
 a {
-    font-size: 12px;
+    font-family: "Geometria";
+    font-weight: bold;
+    font-size: 14px;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.952);
 }
@@ -80,4 +88,36 @@ header {
     text-align: center;
     margin: auto;
     padding-left: 20%;
+}
+main{
+    display: flex;
+    width: 100%;
+}
+hr{
+    padding: 5px;
+}
+.titre_tuto{
+    font-family: "Geometria";
+    font-size: 16px;
+    padding: 12px;
+    margin: 20px;
+}
+.borderbottom{
+    border-bottom: solid 1px black;
+}
+.left{
+    width: 50%;
+    border-right: black 1px solid;
+}
+.right{
+    width: 50%;
+}
+iframe{
+    margin-left:5%;
+    margin-top: 15px;
+}
+.titrevid{
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
