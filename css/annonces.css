@@ -25,11 +25,14 @@ h1,h2,h3 {
 }
 p{
     font-size: 12px;
+    font-family: "Geometria";
+    color: rgba(255, 255, 255, 0.952);
 }
 
 a {
     font-size: 12px;
     text-decoration: none;
+    font-family: "Geometria";
     color: rgba(255, 255, 255, 0.952);
 }
 header {
@@ -60,7 +63,7 @@ header {
     width: 100%;
     border: none #0772d8;
     padding: 6px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(255, 255, 255);
     background-color: #0772d8;
 
 }
