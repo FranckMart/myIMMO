@@ -11,57 +11,62 @@
 </head>
 
 <body>
-        <header>
-            <div id="logo">
-                <a href="accueil_or_connection.html"><img src="../img/logo.png" alt="logo myIMMO"></a>
+    <header>
+        <div id="logo">
+            <a href="accueil_or_connection.html"><img src="../img/logo.png" alt="logo myIMMO"></a>
+        </div>
+        <div id="content-header-right">
+            <ul class="nav_categorie">
+                <li><a href="accueil.html">Acceuil</a></li>
+                <li><a href="tuto.html">Conseil</a></li>
+                <li><input type="search" name="recherche" id="recherche" placeholder="...Search"></li>
+                <li><a href="connexion.html">connexion</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <div id="content-header-right">
-                <a href="accueil.html">
-                    <h2>Accueil</h2>
-                </a>
-                <a href="tuto.html">
-                    <h2>Conseil</h2>
-                </a>
-                <div class="content-header-right-nav">
-                    <input type="search" name="recherche" id="recherche" placeholder="...Search">
-                    <a href="connexion.html">Se connecter</a>
-                    <a href="inscription.html">S'inscrire</a>
-                </div>
-            </div>
-        </header>
-            </section>
-        
-        
-                <section id="inscription">
-                    <h2 id="title_Container">Connexion</h2>
-                    <div class="container">
-                        <form id="sub-form">
-                                <p class="msgCoErr">Afin de valider votre commande, merci de vous connecter :</p>
-                            <div class="row">
-                                <div class="col-md">
-                                    <div class="form-group">
-                                        <label for="pseudo"><h3>Pseudo</h3></label>
-                                        <input type="text" name="pseudo" id="pseudo" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md">
-                                    <div class="form-group">
-                                        <label for="pwd"><h3>Mot de passe</h3></label>
-                                        <input type="password" name="pwd" id="pwd" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                                <button id="connexionForm" type="submit" class="btn btn-success btn-lg">Connexion</button>
-                        </form>
-                        <p id="msgErr" style="display: none">Veuillez correctement remplir le formulaire</p>
+        </div>
+    </header>
+    </section>
+
+
+    <section id="inscription">
+        <h2 id="title_Container">Connexion</h2>
+        <div class="container">
+            <form id="sub-form">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="pseudo">
+                                <h3>Pseudo</h3>
+                            </label>
+                            <input type="text" name="pseudo" id="pseudo" class="form-control">
+                        </div>
                     </div>
-                </section>
-                
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="pwd">
+                                <h3>Mot de passe</h3>
+                            </label>
+                            <input type="password" name="pwd" id="pwd" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <button id="connexionForm" type="submit" class="btn btn-success btn-lg">Connexion</button>
+            </form>
+            <p id="msgErr" style="display: none">Veuillez correctement remplir le formulaire</p>
+        </div>
+    </section>
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jQuery -->
-        <script src="../JS/connexion.js"></script>
+    <script src="../JS/burger.js"></script>
+    <script src="../JS/connexion.js"></script>
 </body>
 
 </html>

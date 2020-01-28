@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +8,61 @@
     <link rel="stylesheet" href="../css/tuto.css">
     <title>Document</title>
 </head>
+
 <body>
-        <header>
-                <div id="logo">
-                    <a href="accueil_or_connection.html"><img src="../img/logo.png" alt="logo myIMMO"></a>
-                </div>
-                <div id="content-header-right">
-                        <a href="accueil_or_connection.html"><h2>Accueil</h2></a>
-                        <a href="tuto.html"><h2>Conseil</h2></a>
-                        <div class="content-header-right-nav">
-                        <input type="search" name="recherche" id="recherche" placeholder="...Search" >
-                        <a href="accueil.html">Se connecter</a>
-                        <a href="inscription.html">S'inscrire</a>
-                        </div>
-                </div>
-            </header>
-            <main>
-                <div class="left">
-                <h3 class="titre_tuto">Tuto</h3>
-                <p class="borderbottom">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur accusamus iusto dolor, consectetur repellendus ab dolorum id facere fugiat non, quisquam est labore officiis? Temporibus accusantium aperiam alias iste.
-                </p>
-                <p class="borderbottom">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum, impedit saepe alias obcaecati totam dolorem fugit fugiat voluptatem placeat consectetur eveniet voluptate possimus soluta, pariatur animi! Omnis, adipisci eum.
-                </p>
-                <p class="borderbottom">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, rem! Facere, ab perferendis praesentium laudantium nemo laboriosam quasi, vitae voluptates ex minus mollitia, numquam pariatur. Modi dolore mollitia corporis perferendis!
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ipsa ullam, labore totam nulla debitis atque dolores iure aperiam sequi laudantium assumenda corporis. Quidem veniam corporis nisi aspernatur iste soluta?
-                </p>
-                </div>
-                <div class="right">
-                <iframe width="615" height="425" src="https://www.youtube.com/embed/9yimV9i-dY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <header>
+        <div id="logo">
+            <a href="accueil_or_connection.html"><img src="../img/logo.png" alt="logo myIMMO"></a>
+        </div>
+        <div id="content-header-right">
+            <ul class="nav_categorie">
+                <li><a href="accueil.html">Acceuil</a></li>
+                <li><a href="tuto.html">Conseil</a></li>
+                <li><input type="search" name="recherche" id="recherche" placeholder="...Search"></li>
+                <li><a href="connexion.html">connexion</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            <h3 class="titre_tuto">Tuto</h3>
+            <p class="borderbottom">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur accusamus iusto dolor,
+                consectetur repellendus ab dolorum id facere fugiat non, quisquam est labore officiis? Temporibus
+                accusantium aperiam alias iste.
+            </p>
+            <p class="borderbottom">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum, impedit saepe alias obcaecati
+                totam dolorem fugit fugiat voluptatem placeat consectetur eveniet voluptate possimus soluta, pariatur
+                animi! Omnis, adipisci eum.
+            </p>
+            <p class="borderbottom">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, rem! Facere, ab perferendis praesentium
+                laudantium nemo laboriosam quasi, vitae voluptates ex minus mollitia, numquam pariatur. Modi dolore
+                mollitia corporis perferendis!
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ipsa ullam, labore totam nulla
+                debitis atque dolores iure aperiam sequi laudantium assumenda corporis. Quidem veniam corporis nisi
+                aspernatur iste soluta?
+            </p>
+        </div>
+        <div class="right">
+            <iframe width="615" height="425" src="https://www.youtube.com/embed/9yimV9i-dY0" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             <h2 class="titrevid">Titre de la vidéo</h2>
         </div>
-        </main>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jQuery -->
+    <script src="../JS/burger.js"></script>
+
 </body>
+
 </html>

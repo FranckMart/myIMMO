@@ -13,13 +13,18 @@
                     <a href="accueil_or_connection.html"><img src="../img/logo.png" alt="logo myIMMO"></a>
                 </div>
                 <div id="content-header-right">
-                        <a href="accueil.html"><h2>Accueil</h2></a>
-                        <a href="tuto.html"><h2>Conseil</h2></a>
-                        <div class="content-header-right-nav">
-                        <input type="search" name="recherche" id="recherche" placeholder="...Search" >
-                        <a href="">Se connecter</a>
-                        <a href="inscription.html">S'inscrire</a>
-                        </div>
+                    <ul class="nav_categorie">
+                            <li><a href="accueil.html">Acceuil</a></li>
+                            <li><a href="tuto.html">Conseil</a></li>
+                            <li><input type="search" name="recherche" id="recherche" placeholder="...Search"></li>
+                            <li><a href="connexion.html">connexion</a></li>
+                            <li><a href="inscription.html">S'inscrire</a></li>
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
                 </div>
             </header>
             <main>
@@ -64,5 +69,8 @@
                     </form>
                 </div>
             </main>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jQuery -->
+    <script src="../JS/burger.js"></script>
+    <script src="../JS/connexion.js"></script>
 </body>
 </html>
