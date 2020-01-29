@@ -71,3 +71,9 @@ label{
     color: rgba(255, 255, 255, 0.952);
 
 }
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .Sign{
+        height: 80%;
+        width: 50%;
+    }
