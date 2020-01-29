@@ -175,6 +175,11 @@ header {
     color: rgba(255, 255, 255, 0.952);
 }
 
+.description-offre  {
+    
+    margin: auto;
+}
+
 .content-offre a {
     width: 45%;
 }
@@ -187,6 +192,7 @@ header {
 .price-offre {
     padding-left: 5%;
     padding-right: 5%;
+    margin: auto;
 }
 
 .price-offre h3 {
