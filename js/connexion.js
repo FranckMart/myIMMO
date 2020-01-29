@@ -19,10 +19,10 @@ formElt.addEventListener("submit", function (e) {
     if ((!regexPseudo.test(pseudo))) {
         alert("Pseudo Erreur");
         document.getElementById("inscription").appendChild(pseudoAide);
-    } else if ((!regexMdp.test(mdp))) {
+    } if ((!regexMdp.test(mdp))) {
         alert("Mdp Erreur");
     }
-    //formElt.reset()
+    formElt.reset()
 
 
 })
