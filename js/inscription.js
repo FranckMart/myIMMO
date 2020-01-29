@@ -1,11 +1,34 @@
-function regmaster(params) {
-    // reg telephone
+function regmaster() {
+    // regexp var
         var regextel = /^(0[1-68])(?:[ _.-]?(\d{2})){4}$/;
-    // reg mail
-        var regexmail =/^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/
-    // reg mdp (Un mot de passe contenant au moins 1 majuscule, 1 minuscule, 1 chiffre, 1 caractère spécial et une longueur d'au moins 10)
-        var regexmdp = /^(?=.{10,}$)(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9])(?=.*?\W).*$/
-    // reg pseudo
-        var regexpseudo;
+        var regexmail =/^([a-z])([a-z0-9])+(.|-)?([a-z0-9]+)@([a-z0-9]{2,}).([a-z]{2,4})$/;
+        var regexmdp = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!$@%_])([-+!$@%_\w]{8,15})$/;
+        var regexpseudo =/^([a-zA-Z0-9-_]{2,36})$/;
+    
+    // form var
+        var pseudo= document.forms["veriform"]["pseudo"].value;
+        var mdp= document.forms["veriform"]["mdp"].value;
+        var mpdbis= document.forms["veriform"]["mdpbis"].value;
+        var mail= document.forms["veriform"]["mail"].value;
+        var tel= document.forms["veriform"]["tel"].value;
+        var nom= document.forms["veriform"]["nom"].value;
+        var prenom= document.forms["veriform"]["prenom"].value;
 
+    // regexp result test
+        var phoneResult = regextel.test(tel);
+        var mailResult = regexmail.test(mail);
+        var pseudoResult = regexpseudo.test(pseudo);
+        var mdpResult = regexmdp.test(mdp);
+
+        if ((phoneResult == false) ||
+            (mailResult == false) ||
+            (pseudoResult == false) ||
+            (mdpResult == false)){
+                alert("Un champs de saisi est faux")
+                console.log(phoneResult);
+                console.log(mailResult);
+                console.log(pseudoResult);
+                console.log(mdpResult);
+                return false;
+            }
 }
