@@ -16,7 +16,7 @@ $(window).on("load",function() {
     function moveLeft() {
         $('#slider ul').animate({
             left: + slideWidth
-        }, 400, function () {
+        }, 200, function () {
             $('#slider ul li:last-child').prependTo('#slider ul');
             $('#slider ul').css('left', '');
         });
@@ -25,14 +25,14 @@ $(window).on("load",function() {
     function moveRight() {
         $('#slider ul').animate({
             left: - slideWidth
-        }, 400, function () {
+        }, 10, function () {
             $('#slider ul li:first-child').appendTo('#slider ul');
             $('#slider ul').css('left', '');
         });
     };
     setInterval(function () {
         moveRight();
-    }, 3000);
+    }, 2000);
   });
    
 
