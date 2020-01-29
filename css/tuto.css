@@ -168,34 +168,43 @@ iframe{
     margin-right: 15px;
 }
 
+.right-mobile {
+    display: none;
+}
+
 @media (min-width: 320px) and (max-width: 1024px){
     body {
         overflow-x: hidden;
     }
-    p{
+
+.left {
+    width: 100%;
+}
+    .left p,h3{
         font-size: 18px;
         font-family: "Geometria";
-        color: rgba(255, 255, 255, 0.952);
+        color: black;
     }
-    #marketing-webside-content {
-        width: 90%;
-        display: block;
-        height: auto;
-        margin: auto;
-        margin-top: 5%;
-        background-color: #0772d8;
-        text-align: center;
+    main{
+       flex-direction: column;
     }
-    .marketing-content-right {
-        padding: 10px;
-        width: 50%;
-        height: auto;
-        margin: auto;        
-    }
-    .marketing-content-right img{
+
+    .right-mobile {
         width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    iframe {
+
+        width: 85%;
         height: 100%;
     }
+
+    .right {
+        display: none;
+    }
+
     #slider {
         display: block;
         position: relative;

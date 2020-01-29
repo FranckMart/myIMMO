@@ -13,16 +13,15 @@ formElt.addEventListener("submit", function (e) {
     var pseudo = formElt.elements.pseudo.value;
     var mdp = formElt.elements.pwd.value;
     var regexPseudoNan = /^[a-zA-Z0-9_-]{6,12}$/;
-    var regexPseudoNb = /^(?=.*[a-zA-Z0-9_-])(?=.*[0-9]){6,14}$/;
-    // var regexMdp = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,15})$/
-    var regexMdp = /^(?=.{10,}$)(?=.?[a-z])(?=.?[A-Z])(?=.?[0-9])(?=.?\W).*$/
+    var regexMdp = /^[a-zA-Z0-9_-]{6,12}$/
 
-    if ((!regexPseudoNan.test(pseudo)) || (regexPseudoNb.test(pseudo))) {
+    if ((!regexPseudoNan.test(pseudo))) {
         alert("Pseudo Erreur");
-        document.getElementById("inscription").appendChild(pseudoAide);
-    } if ((!regexMdp.test(mdp))) {
+    }if ((regexMdp.test(mdp) != regexPseudoNan.test(pseudo))) {
         alert("Mdp Erreur");
+        console.log(regexMdp.test(mdp))
     }
+
     formElt.reset()
 
 
