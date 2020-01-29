@@ -46,7 +46,7 @@ li {
 }
 
 header {
-   
+
     display: flex;
     width: 100%;
     margin: auto;
@@ -79,6 +79,7 @@ header {
     font-size: 1.2rem;
 
 }
+
 .burger {
     display: none;
 }
@@ -152,15 +153,18 @@ header {
     margin-top: 5%;
     margin-bottom: -10%;
     height: auto;
-    
+
 }
-.marketing-content-right img{
+
+.marketing-content-right img {
     width: 100%;
     height: 100%;
 }
+
 #slider {
     display: none;
 }
+
 #annonce-content {
     width: 90%;
     margin: auto;
@@ -168,11 +172,17 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+.annonce-text-content-mobile {
+    display: none;
+}
+
 .annonce-pic-content {
     width: 40%;
-    height:auto;
+    height: auto;
     display: flex;
 }
+
 #annonce-content a {
     width: 50%;
     height: 90%;
@@ -203,7 +213,7 @@ header {
     margin-top: 100px;
 }
 
-.annonce-text-content{
+.annonce-text-content {
     width: 40%;
     text-align: center;
     height: auto;
@@ -217,7 +227,7 @@ footer {
     background-color: #0772d8;
 }
 
-.footer-top-content{
+.footer-top-content {
     display: flex;
 }
 
@@ -226,59 +236,69 @@ footer {
     text-align: center;
 }
 
-.footer-top-element :nth-child(1), .footer-top-element :nth-child(2){
+.footer-top-element :nth-child(1),
+.footer-top-element :nth-child(2) {
     border-right: solid black 1px;
 }
 
-.footer-top-element :nth-child(3){
+.footer-top-element :nth-child(3) {
     border-right: none;
 }
 
-.footer-bottom-content{
+.footer-bottom-content {
     text-align: center;
     width: 30%;
     margin: auto;
-    
+
 }
+
 .footer-bottom-content p {
     margin-bottom: 0;
 }
 
-.footer-bottom-content :nth-child(1){
+.footer-bottom-content :nth-child(1) {
     border-bottom: solid black 1px;
 }
+
 .footer-bottom-content :nth-child(3) {
     border-bottom: none;
 }
 
-@media (min-width: 320px) and (max-width: 1024px){
+@media (min-width: 320px) and (max-width: 1024px) {
     body {
         overflow-x: hidden;
     }
-    p{
+
+    p {
         font-size: 18px;
         font-family: "Geometria";
         color: rgba(255, 255, 255, 0.952);
     }
+
     #marketing-webside-content {
         width: 90%;
         display: block;
         height: auto;
         margin: auto;
+        margin-top: auto;
         margin-top: 5%;
-        background-color: #0772d8;
+        background-color:#0772d8;
         text-align: center;
+        padding: 10%;
     }
+
     .marketing-content-right {
         padding: 10px;
-        width: 50%;
+        width: 95%;
         height: auto;
-        margin: auto;        
+        margin: auto;
     }
-    .marketing-content-right img{
+
+    .marketing-content-right img {
         width: 100%;
         height: 100%;
     }
+
     #slider {
         display: block;
         position: relative;
@@ -286,15 +306,17 @@ footer {
         border-radius: 4px;
         width: 80%;
         margin: auto;
-      }
-      #slider ul {
+        margin-top: 10%;
+    }
+
+    #slider ul {
         position: relative;
         margin: 0;
         padding: 0;
         list-style: none;
-      }
-      
-      #slider ul li {
+    }
+
+    #slider ul li {
         position: relative;
         display: block;
         float: left;
@@ -302,18 +324,39 @@ footer {
         padding: 0;
         background: #ccc;
         text-align: center;
-      }
-      .slider_option {
+    }
+
+    .slider_option {
         position: relative;
         margin: auto;
         width: 160px;
         font-size: 18px;
-      }
-      #slider img{
-          width: 100%;
-          height: 100%;
-      }
-      
+    }
+
+    #slider img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .annonce-text-content-mobile {
+
+        width: 70%;
+        text-align: center;
+        height: auto;
+        background-color: #0772d8;
+        margin: auto;
+        margin-top: 10%;
+        display: block;
+    }
+
+    .annonce-text-content {
+
+        display: none
+    }
+
+    .annonce-pic-content {
+        display: none;
+    }
 
     .second_title {
         margin-bottom: 0px;
@@ -343,10 +386,11 @@ footer {
         display: block;
         cursor: pointer;
     }
+
     .nav-active {
         transform: translateX(0%);
     }
-      
+
 }
 
 @keyframes navLinkFade {
@@ -373,6 +417,3 @@ footer {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
-
-
-

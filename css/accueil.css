@@ -46,7 +46,7 @@ li {
 }
 
 header {
-   
+
     display: flex;
     width: 100%;
     margin: auto;
@@ -79,6 +79,7 @@ header {
     font-size: 1.2rem;
 
 }
+
 .burger {
     display: none;
 }
@@ -145,7 +146,6 @@ header {
 .content-left {
     width: 70%;
     margin-top: 10%;
-
     background-color: #0772d8;
 }
 
@@ -200,13 +200,6 @@ header {
 
 }
 
-.add-content {
-    width: 100%;
-    margin-top: 60%;
-    height: 30%;
-    background-color: #0772d8;
-    text-align: center;
-}
 
 .logo-add-content {
     padding-top: 10%;
@@ -219,8 +212,16 @@ header {
     width: 82%;
 }
 
+.add-content-mobile {
+    display: none;
+}
 
 .add-content {
+    width: 100%;
+    margin-top: 60%;
+    height: 30%;
+    background-color: #0772d8;
+    text-align: center;
     box-sizing: border-box;
     width: 70%;
     margin-top: 50%;
@@ -336,12 +337,109 @@ footer {
         overflow-x: hidden;
     }
 
+    p {
+        font-size: 10px;
+        font-family: "Geometria";
+        color: rgba(255, 255, 255, 0.952);
+    }
+
+    a {
+        font-size: 10px;
+        text-decoration: none;
+        font-family: "Geometria";
+        color: rgba(255, 255, 255, 0.952);
+    }
+
+    li {
+        font-family: "Geometria";
+        font-size: 12px;
+    }
+
+    .price-offre h3 {
+        font-size: 12px;
+    }
+
     .second_title {
         margin-bottom: 0px;
         padding: 0;
         font-size: 14px;
     }
 
+    .content-center-mobile {
+        display: block;
+    }
+
+    .content-left {
+        width: 100%;
+    }
+
+
+    .logo-add-mobile-content {
+        padding-top: 10%;
+        width: 60%;
+        margin: auto;
+
+    }
+
+    .add-content-mobile img {
+        width: 82%;
+    }
+
+
+    .add-content-mobile {
+        box-sizing: border-box;
+        width: 35%;
+        margin-left: auto;
+        margin-top: 20%;
+        margin-right: auto;
+        background-image: url("../img/annonce.jpg");
+        background-size: 100% 100%;
+        border-radius: 10px;
+        text-align: center;
+        border-color: #CCCCCC;
+        display: block;
+    }
+
+    .description-offre ul {
+        padding-left: 15%;
+    }
+    .logo-add-mobile-content {
+        height: 100%;
+    }
+
+    .logo-add-mobile-content img {
+        width: 80%;
+        height: 70%;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .logo-add-mobile-content-area p {
+        box-sizing: border-box;
+        margin-top: 20%;
+        padding: 2px;
+        background-color: #0772d8;
+        border: 1px solid #CCCCCC;
+        width: 95%;
+        height: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        border-radius: 10px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.952);
+        text-align: center;
+    }
+
+    .price-offre {
+        margin: auto;
+        padding: 2%;
+    }
+
+    .content-offre a {
+        width: 54%;
+    }
     .nav_categorie {
         position: absolute;
         right: 0;
@@ -364,7 +462,15 @@ footer {
         display: block;
         cursor: pointer;
     }
+
     .nav-active {
         transform: translateX(0%);
     }
+
+    .content-right {
+        display: none;
+    }
+
+
+
 }
