@@ -16,7 +16,7 @@ main{
 }
 
 .Sign{
-    width: 30%;
+    width: 40%;
     height: 75%;
     margin-right: auto;
     margin-left: auto;
@@ -56,7 +56,7 @@ form{
 }
 
 .formstyle, .button{
-    padding-top: 10px;
+    padding-top: 7px;
 }
 
 h2{
@@ -74,6 +74,7 @@ label{
 
 @media (min-width: 320px) and (max-width: 1024px) {
     .Sign{
-        height: 80%;
-        width: 50%;
+        height: 85%;
+        width: 55%;
     }
+}

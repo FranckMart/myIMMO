@@ -35,7 +35,7 @@ p {
 }
 
 a {
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
     font-family: "Geometria";
     color: rgba(255, 255, 255, 0.952);
@@ -166,14 +166,14 @@ nav{
     margin-right: 2px;
     font-size: 16px;
     border-radius: 20px 0px 0px 20px;
-    border: 2px solid #0469C7;
+border: 2px solid #0469C7;
     box-shadow: 5px 5px 5px darkgrey;
 }
 
 .rdv{
     text-align: center;
     height: 40%;
-    width: 10%;
+    width: 15%;
     background-color: #0772d8;
     margin-top: auto;
     margin-bottom: auto;
@@ -265,7 +265,7 @@ nav{
     margin-right: auto;
     margin-bottom: auto;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 12px;
     color: white;
     text-align: center;
 }
