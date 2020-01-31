@@ -17,12 +17,18 @@ formElt.addEventListener("submit", function (e) {
 
     if ((!regexPseudoNan.test(pseudo))) {
         alert("Pseudo Erreur");
-    }if ((regexMdp.test(mdp) != regexPseudoNan.test(pseudo))) {
+    }
+    if ((regexMdp.test(mdp) != regexPseudoNan.test(pseudo))) {
         alert("Mdp Erreur");
         console.log(regexMdp.test(mdp))
     }
-
-    formElt.reset()
-
+    if(regexPseudoNan.test(pseudo) == true && (regexMdp.test(mdp) == true))
+    document.getElementById("connexionForm").addEventListener("click", function (e) {
+        document.location.href = "accueil.html";
+        })
+    
 
 })
+
+
+   
